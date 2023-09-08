@@ -1,8 +1,9 @@
-A book recommendation website similar to Goodreads. For this version to work:
-- Set up your own MongoDB Atlas cloud database. Replace `DB_USR` and `DB_PWD` below with the database's username and password.
+A book recommendation website similar to Goodreads. For this version to work, you will need to set your own environment variables as the ones below may not work:
+- Set up your own MongoDB Atlas cloud database. Replace `DB_USR` and `DB_PWD` with the database's username and password.
 - Set up the collections and some dummy data according to `backend/tests/dummyData.py`.
-- Acquire your own API key for Google books and replace `API_KEY` below with your own.
-- Acquire your own API key for NYT API and replace `NYT_API_KEY` below with your own.
+- Acquire your own API key for Google books and replace `API_KEY` with your own.
+- Acquire your own API key for NYT API and replace `NYT_API_KEY` with your own.
+- You may also need to use your own `MAIL_USR` and `MAIL_PWD`.
 
 # Backend
 ## Prerequisites
@@ -19,7 +20,7 @@ In order to set up the backend of the application you must:
   - If `python -m venv .` does not work. Try to substitute `python` for `python3` or to give an absolute path for the location of the folder created in step 3 instead of using `.`(dot).
 6. Type `cd Scripts/` and with your preferred text editor open the activate (no extensions). If there is no `Scripts` directory try `bin`.
 7. Find the line wherein the following code is written (should be around line 46): `PATH=$VIRTUAL_ENV/Scripts:$PATH` `export PATH`
-8. Add the following lines underneath `export PATH` and save your changes.: 
+8. Set the environment variables. Add the following lines underneath `export PATH` and save your changes.: 
   - `export DB_USR=”admin”`
   - `export DB_PWD=”zs9k2g7xnkdaSZo8”`
   - `export MAIL_USR=”bookrec.group1@gmail.com”`
