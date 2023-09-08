@@ -1,6 +1,6 @@
 A book recommendation website similar to Goodreads. For this version to work, you will need to set your own environment variables as the ones below may not work:
 - Set up your own MongoDB Atlas cloud database. Replace `DB_USR` and `DB_PWD` with the database's username and password.
-- Set up the collections and some dummy data according to `backend/tests/dummyData.py`.
+- Set up the collections and some dummy data in your database using the data in `backend/tests/dummyData.py` as a template.
 - Acquire your own API key for Google books and replace `API_KEY` with your own.
 - Acquire your own API key for NYT API and replace `NYT_API_KEY` with your own.
 - You may also need to use your own `MAIL_USR` and `MAIL_PWD`.
